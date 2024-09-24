@@ -1,8 +1,0 @@
-https://www.hvsen-mc.com/
-http://sys.sdwfh.org.cn/#/login
-Packer-Fuzzer
-webpack是一个打包工具，他的宗旨是一切静态资源皆可打包。有人就会问为什么要webpack？
-webpack是现代前端技术的基石，常规的开发方式，比如jquery,html,css静态网页开发已经落后了。
-现在是MVVM的时代，数据驱动界面。webpack它做的事情是，分析你的项目结构，
-找到JavaScript模块以及其它的一些浏览器不能直接运行的拓展语言（Scss，TypeScript等），
-并将其打包为合适的格式以供浏览器使用
