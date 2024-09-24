@@ -1,27 +1,11 @@
 - sitename: GitHub
-  name: mzlogin
-  url: https://github.com/mzlogin
+  name: ther0ok1eboy
+  url: https://github.com/ther0ok1eboy
 
-- sitename: 掘金
-  name: mzlogin
-  url: http://gold.xitu.io/user/570ddaeb2e958a005c63b2da
+- sitename: Blog
+  name: Blog
+  url: https://ther0ok1eboy.github.io/
 
-- sitename: LinkedIn
-  name: mazhuang
-  url: https://www.linkedin.com/in/mazhuang
-
-- sitename: 博客
-  name: 码志
-  url: http://mazhuang.org
-
-- sitename: 微博
-  name: mzlogin
-  url: http://weibo.com/mzlogin
-
-- sitename: 知乎
-  name: mzlogin
-  url: http://www.zhihu.com/people/mzlogin
-
-- sitename: 豆瓣
-  name: 闷骚的程序员
-  url: http://www.douban.com/people/freedim
+- sitename: Bilibili
+  name: rO_ok1e
+  url: https://www.bilibili.com/video/BV1Me411B7tS/?vd_source=6fa2c0be3124aa3ee5f183b5ad181bd0#reply227837748096
