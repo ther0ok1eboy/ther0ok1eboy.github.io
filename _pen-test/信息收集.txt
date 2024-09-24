@@ -1,0 +1,24 @@
+
+
+第一步:
+域名收集推荐：强烈推荐这几个组合
+灯塔：https://github.com/TophantTechnology/ARL/ 
+Oneforall:https://github.com/shmilylty/OneForAll
+Subfinder:https://github.com/projectdiscovery/subfinder
+Fofa+Hunter
+
+URLFINDER：https://github.com/pingc0y/URLFinder
+第二步:
+筛选重复URL地址
+
+第三步:
+httpx工具或者Ehole工具
+
+注册 登录页面(未授权拼接较多-弱口令-登录框逻辑漏洞)
+
+sql注入 XSS(pdf-xss svg-xss html-xss xml-xss) 水平越权 垂直越权 信息泄露 文件上传 csrf
+
+搜集：icp备案号 CMS 端口 目录扫描 nmap-goby做一个端口扫描 登录框(爆破)
+
+转为小程序
+七麦 搜索小程序

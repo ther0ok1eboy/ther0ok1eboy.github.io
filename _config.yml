@@ -77,16 +77,6 @@ navs:
     label: Categories
 
   -
-    href: /archives/
-    label: Archives
-    mobile-hidden: true
-
-  -
-    href: /open-source/
-    label: Open-source
-    mobile-hidden: true
-
-  -
     href: /pen-test/
     label: Pen-test
 

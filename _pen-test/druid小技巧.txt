@@ -1,0 +1,19 @@
+Druid monitor页面渗透测试小技巧是一个非常好用的数据库连接池 有URL Session Spring监控
+常见用户:admin ruoyi druid
+常见密码:123456 12345 ruoyi admin druid admin123 admin888
+常见路径(可构造未授权拼接尝试):
+/druid/index.html
+/druid/login.html
+/prod-api/druid/login.html
+/prod-api/druid/index.html
+/dev-api/druid/login.html
+/dev-api/druid/index.html
+/api/druid/login.html
+/api/druid/index.html
+/admin/druid/login.html
+/admin-api/druid/login.html
+低版本默认shiro默认key:kPH+bIxk5D2deziIxcaaaA==
+
+http://139.9.230.174:50001/druid/login.html
+http://221.194.122.149:5555/druid/login.html
+

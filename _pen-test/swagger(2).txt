@@ -1,0 +1,10 @@
+http://119.3.9.51:8084/swagger/ui/index
+http://101.132.24.13:8000/swagger/ui/index
+
+
+/api/getlistinfo/1
+
+
+result:id:2131232
+
+      2131232
