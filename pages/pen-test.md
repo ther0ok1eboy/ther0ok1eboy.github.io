@@ -27,7 +27,7 @@ permalink: /wiki/
 {% endif %}
 {% endfor %}
 </ul>
-> test
+
 {% when 'cate' %}
 
 {% assign item_grouped = site.wiki | where_exp: 'item', 'item.title != "Wiki Template"' | group_by: 'cate1' | sort: 'name' %}
