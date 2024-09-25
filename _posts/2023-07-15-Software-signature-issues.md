@@ -1,11 +1,18 @@
 ---
 layout: post
 title: Software signature issues
-date: 2023-07-15 
-tags: linux   
+categories: [Software]
+Description: How to configure the wireless network.
+keywords: IP Rfkill
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
 
-### Problem description
+## Problem description
 
 ```shell
 error: xxx: signature from "xxx <xxx@xxx>" is unknown trust
@@ -13,7 +20,7 @@ error: xxx: signature from "xxx <xxx@xxx>" is unknown trust
 Do you want to delete it? [Y/n]
 ```
 
-### Solution
+## Solution
 
 ```shell
 sudo rm -R /etc/pacman.d/gnupg/

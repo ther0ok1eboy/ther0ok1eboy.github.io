@@ -14,7 +14,7 @@ mindmap2: false
 
 Description: Jeecg Boot.
 
-# SQL Injection
+## SQL Injection
 
 ### /sys/duplicate/check
 
