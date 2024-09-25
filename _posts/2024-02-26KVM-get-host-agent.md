@@ -1,8 +1,15 @@
 ---
 layout: post
-title: Virtual machine kali go hosting agent
-date:  2024-02-26
-tags: network
+title: KVM get host agent
+categories: [Software]
+Description: WPS bold font display exception problem under linux system.
+keywords: KVM
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
 
 ## KVM get host agent
