@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: Jeecg Boot利用总结 By O神糕手.
+Description: Jeecg Boot.
 
 ## SQL Injection
 
@@ -26,7 +26,7 @@ poc：
 
 <img src="/images/pen-test/JeecgBoot/image-20240626163646353.png" alt="image-20240626163646353" style="zoom:67%;" />
 
-### 2）/sys/ng-alain/getDictItemsByTable/
+### /sys/ng-alain/getDictItemsByTable/
 
 poc：
 
@@ -37,10 +37,7 @@ poc：
 <img src="/images/pen-test/JeecgBoot/image-20240625145046671.png" alt="image-20240625145046671" style="zoom:50%;" />
 
 
-
-
-
-### 3）/sys/dict/queryTableData
+### /sys/dict/queryTableData
 
 poc：
 
@@ -50,11 +47,7 @@ poc：
 
 <img src="/images/pen-test/JeecgBoot/image-20240625154257417.png" alt="image-20240625154257417" style="zoom: 67%;" />
 
-
-
-
-
-### 4）/jmreport/qurestSql
+### /jmreport/qurestSql
 
 poc：
 
