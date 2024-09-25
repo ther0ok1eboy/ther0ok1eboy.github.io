@@ -13,21 +13,6 @@ permalink: /pen-tests/
 
 {% case site.components.wiki.view %}
 
-{% when 'list' %}
-
-<ul class="listing">
-{% for pen-tests in site.pen-tests %}
-{% if pen-tests.title != "pen-tests Template" and pen-tests.topmost == true %}
-<li class="listing-item"><a href="{{ site.url }}{{ pen-tests.url }}"><span class="top-most-flag">[置顶]</span>{{ pen-tests.title }}</a></li>
-{% endif %}
-{% endfor %}
-{% for pen-tests in site.pen-tests %}
-{% if pen-tests.title != "Pen-tests Template" and pen-tests.topmost != true %}
-<li class="listing-item"><a href="{{ site.url }}{{ pen-tests.url }}">{{ pen-tests.title }}<span style="font-size:12px;color:red;font-style:italic;">{%if pen-tests.layout == 'mindmap' %}  mindmap{% endif %}</span></a></li>
-{% endif %}
-{% endfor %}
-</ul>
-
 {% when 'cate' %}
 
 {% assign item_grouped = site.pen-tests | where_exp: 'item', 'item.title != "Pen-tests Template"' | group_by: 'cate1' | sort: 'name' %}
