@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-> by O神糕手
+By O神糕手
 
 ### 一、SQL注入
 
