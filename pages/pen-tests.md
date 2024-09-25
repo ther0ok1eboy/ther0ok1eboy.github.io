@@ -11,7 +11,7 @@ permalink: /pen-tests/
 
 > Penetrate everything
 
-{% case site.components.pen-tests.view %}
+{% case site.components.wiki.view %}
 
 {% when 'list' %}
 
