@@ -38,4 +38,4 @@ Description: How to use hosting agents for virtual machines.
 
 ### How to use?
 
-- `$ proxychains4 YOUR COMMANDS`
+- `$ proxychains4 COMMANDS`

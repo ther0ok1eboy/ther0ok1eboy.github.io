@@ -1,8 +1,8 @@
 ---
 layout: pen-test
-title: Wiki
+title: Pen-test
 description: 人越学越觉得自己无知
-keywords: 维基, Wiki
+keywords: pen-test 0day
 comments: false
 copyright: false
 menu: 维基
