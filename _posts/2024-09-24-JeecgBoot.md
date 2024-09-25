@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Jeecg Boot Exp/Poc
-categories: [pen-test]
+title: Wireless network configuration
+categories: [Software]
 Description: Jeecg boot利用总结
-keywords: jeecg-boot
+keywords: IP Rfkill
 mermaid: false
 sequence: false
 flow: false
@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: Jeecg Boot.
+Description: Jeecg Boot利用总结 By O神糕手.
 
 ## 一、SQL注入
 
