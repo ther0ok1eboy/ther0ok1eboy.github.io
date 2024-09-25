@@ -1,36 +1,36 @@
 ---
-layout: wiki
+layout: pen-test
 title: Wiki
 description: 人越学越觉得自己无知
 keywords: 维基, Wiki
 comments: false
 copyright: false
 menu: 维基
-permalink: /wiki/
+permalink: /pen-test/
 ---
 
 > 记多少命令和快捷键会让脑袋爆炸呢？
 
-{% case site.components.wiki.view %}
+{% case site.components.pen-test.view %}
 
 {% when 'list' %}
 
 <ul class="listing">
-{% for wiki in site.wiki %}
-{% if wiki.title != "Wiki Template" and wiki.topmost == true %}
-<li class="listing-item"><a href="{{ site.url }}{{ wiki.url }}"><span class="top-most-flag">[置顶]</span>{{ wiki.title }}</a></li>
+{% for pen-test in site.pen-test %}
+{% if pen-test.title != "pen-test Template" and pen-test.topmost == true %}
+<li class="listing-item"><a href="{{ site.url }}{{ pen-test.url }}"><span class="top-most-flag">[置顶]</span>{{ pen-test.title }}</a></li>
 {% endif %}
 {% endfor %}
-{% for wiki in site.wiki %}
-{% if wiki.title != "Wiki Template" and wiki.topmost != true %}
-<li class="listing-item"><a href="{{ site.url }}{{ wiki.url }}">{{ wiki.title }}<span style="font-size:12px;color:red;font-style:italic;">{%if wiki.layout == 'mindmap' %}  mindmap{% endif %}</span></a></li>
+{% for pen-test in site.pen-test %}
+{% if pen-test.title != "Pen-test Template" and pen-test.topmost != true %}
+<li class="listing-item"><a href="{{ site.url }}{{ pen-test.url }}">{{ pen-test.title }}<span style="font-size:12px;color:red;font-style:italic;">{%if pen-test.layout == 'mindmap' %}  mindmap{% endif %}</span></a></li>
 {% endif %}
 {% endfor %}
 </ul>
 
 {% when 'cate' %}
 
-{% assign item_grouped = site.wiki | where_exp: 'item', 'item.title != "Wiki Template"' | group_by: 'cate1' | sort: 'name' %}
+{% assign item_grouped = site.pen-test | where_exp: 'item', 'item.title != "Pen-test Template"' | group_by: 'cate1' | sort: 'name' %}
 {% for group in item_grouped %}
 ### {{ group.name }}
 {% assign cate_items = group.items | sort: 'title' %}
@@ -50,5 +50,3 @@ permalink: /wiki/
 {% endfor %}
 
 {% endcase %}
-
-

@@ -1,8 +1,15 @@
 ---
 layout: post
 title: WPS Fakebold
-date:  2024-08-29
-tags: software
+categories: [Software]
+Description: 2024 latest solutions for associate remote repositories.
+keywords: WPS
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
 
 Version:

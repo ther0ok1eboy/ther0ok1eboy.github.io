@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://ther0ok1eboy.github.io/
+url: https://ther0ok1eboy.github.io
 date_format: "ordinal"
 title: Blog
 subtitle: "千里之堤,溃于蚁穴"
