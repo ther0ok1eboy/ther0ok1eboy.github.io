@@ -22,7 +22,8 @@ Also check the output of the ip link command to see if a wireless interface was 
 
 `$ ip link set INTERFACE up`
 
-> Note: 
+### Note
+
 - If you get errors like RTNETLINK answers: `Operation not possible due to RF-kill`, make sure that the device is not hard-blocked or soft-blocked.
 
 - If you get the error message SIOCSIFFLAGS: No such file or directory, it most certainly means that your wireless chipset requires a firmware to function.
@@ -35,4 +36,4 @@ Many laptops have a hardware button (or switch) to turn off the wireless card; h
 
 If the card is hard-blocked, use the hardware button (switch) to unblock it. If the card is not hard-blocked but soft-blocked, use the following command:
 
-`rfkill unblock INTERFACE`
+`$ rfkill unblock INTERFACE`
