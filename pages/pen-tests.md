@@ -6,15 +6,31 @@ keywords: pen-test 0day
 comments: false
 copyright: false
 menu: 维基
-permalink: /pen-tests/
+permalink: /wiki/
 ---
 
 > Penetrate everything
 
 {% case site.components.wiki.view %}
 
+{% when 'list' %}
+
+<ul class="listing">
+{% for wiki in site.wiki %}
+{% if wiki.title != "Wiki Template" and wiki.topmost == true %}
+<li class="listing-item"><a href="{{ site.url }}{{ wiki.url }}"><span class="top-most-flag">[置顶]</span>{{ wiki.title }}</a></li>
+{% endif %}
+{% endfor %}
+{% for wiki in site.wiki %}
+{% if wiki.title != "Wiki Template" and wiki.topmost != true %}
+<li class="listing-item"><a href="{{ site.url }}{{ wiki.url }}">{{ wiki.title }}<span style="font-size:12px;color:red;font-style:italic;">{%if wiki.layout == 'mindmap' %}  mindmap{% endif %}</span></a></li>
+{% endif %}
+{% endfor %}
+</ul>
+
 {% when 'cate' %}
 
+{% assign item_grouped = site.wiki | where_exp: 'item', 'item.title != "Wiki Template"' | group_by: 'cate1' | sort: 'name' %}
 {% for group in item_grouped %}
 ### {{ group.name }}
 {% assign cate_items = group.items | sort: 'title' %}
@@ -34,5 +50,3 @@ permalink: /pen-tests/
 {% endfor %}
 
 {% endcase %}
-
-
