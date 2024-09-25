@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: Jeecg boot利用总结 By O神糕手.
+Description: Jeecg Boot.
 
 ## 一、SQL注入
 
