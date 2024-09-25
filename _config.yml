@@ -76,12 +76,8 @@ navs:
     label: Categories
 
   -
-    href: /pen-test/
-    label: Pen-test
-
-  -
     href: /wiki/
-    label Wiki
+    label Pen-test
 
   -
     href: /links/
