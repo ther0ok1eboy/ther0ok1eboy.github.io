@@ -15,7 +15,6 @@ permalink: /pen-tests/
 
 {% when 'cate' %}
 
-{% assign item_grouped = site.pen-tests | where_exp: 'item', 'item.title != "Pen-tests Template"' | group_by: 'cate1' | sort: 'name' %}
 {% for group in item_grouped %}
 ### {{ group.name }}
 {% assign cate_items = group.items | sort: 'title' %}
