@@ -12,8 +12,8 @@ permalink: /pen-test/
 > 零散的知识，简短的观点，作为片段汇集于此。
 
 {% assign tagliststr = '' %}
-{% for item in site.fragments %}
-{% if item.title != "Fragment Template" %}
+{% for item in site.pen-test %}
+{% if item.title != "pen-test Template" %}
   {% for tag in item.tags %}
     {% if tagliststr contains tag %}
     {% else %}
@@ -26,15 +26,15 @@ permalink: /pen-test/
 
 {% assign taglist = tagliststr | split: ',' | sort_natural %}
 
-<a href="{{ site.url }}/fragments/" style="color:#888;display:inline-block;margin:0 8px;">全部</a>{% for tag in taglist %}<a href="{{ site.url }}/fragments/?tag={{ tag }}" style="color:#888;display:inline-block;margin:0 8px;">{{ tag }}</a>{% endfor %}
+<a href="{{ site.url }}/pen-test/" style="color:#888;display:inline-block;margin:0 8px;">全部</a>{% for tag in taglist %}<a href="{{ site.url }}/pen-test/?tag={{ tag }}" style="color:#888;display:inline-block;margin:0 8px;">{{ tag }}</a>{% endfor %}
 
 <ul class="listing">
-{% for item in site.fragments %}
-{% if item.title != "Fragment Template" %}
+{% for item in site.pen-tag %}
+{% if item.title != "pen-test Template" %}
 <li class="listing-item" tags="{% for tag in item.tags %}{{ tag }} {% endfor %}">
   <a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a>
   {% for tag in item.tags %}
-  <a style="font-size:12px;color:gray;font-style:italic;display:inline-block;margin:0 0 0 4px;padding:0 4px;background-color:lightgray;" href="{{ site.url }}/fragments/?tag={{ tag }}" title="{{ tag }}">{{ tag }}</a>
+  <a style="font-size:12px;color:gray;font-style:italic;display:inline-block;margin:0 0 0 4px;padding:0 4px;background-color:lightgray;" href="{{ site.url }}/pen-test/?tag={{ tag }}" title="{{ tag }}">{{ tag }}</a>
   {% endfor %}
 </li>
 {% endif %}
