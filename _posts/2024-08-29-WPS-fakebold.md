@@ -2,7 +2,7 @@
 layout: post
 title: WPS Fakebold
 categories: [Software]
-Description: 2024 latest solutions for associate remote repositories.
+Description: WPS bold font display exception problem under linux system.
 keywords: WPS
 mermaid: false
 sequence: false
@@ -12,15 +12,19 @@ mindmap: false
 mindmap2: false
 ---
 
-Version:
+Description: WPS bold font display exception problem under linux system.
 
-`wps-office-cn`
+### Version:
 
-Problem description: 
+`wps-office-cn-12.1.0.17885-1`
+
+> link: https://aur.archlinux.org/packages/wps-office-cn
+
+### Problem description: 
 
 When using wps to open Chinese documents, Chinese fonts will fail to display because of the effect of font bolding.
 
-solution:
+### solution:
 
 Just install the two packages.
 
