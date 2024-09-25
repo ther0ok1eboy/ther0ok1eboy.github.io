@@ -29,7 +29,7 @@ permalink: /pen-test/
 <a href="{{ site.url }}/pen-test/" style="color:#888;display:inline-block;margin:0 8px;">全部</a>{% for tag in taglist %}<a href="{{ site.url }}/pen-test/?tag={{ tag }}" style="color:#888;display:inline-block;margin:0 8px;">{{ tag }}</a>{% endfor %}
 
 <ul class="listing">
-{% for item in site.pen-tag %}
+{% for item in site.pen-test %}
 {% if item.title != "pen-test Template" %}
 <li class="listing-item" tags="{% for tag in item.tags %}{{ tag }} {% endfor %}">
   <a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a>
