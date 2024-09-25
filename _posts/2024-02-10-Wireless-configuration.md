@@ -3,7 +3,7 @@ layout: post
 title: Wireless network configuration
 categories: [Software]
 Description: How to configure the wireless network.
-keywords: KVM Clash Proxychains4
+keywords: IP Rfkill
 mermaid: false
 sequence: false
 flow: false

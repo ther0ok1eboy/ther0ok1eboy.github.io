@@ -1,9 +1,18 @@
 ---
 layout: post
 title: KVM Connection Failure
-date:  2024-02-21
-tags: network
+categories: [Software]
+Description: KVM Connection Failure
+keywords: KVM 
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
+
+Description: KVM Connection Failure.
 
 ## Introduction
 
@@ -13,8 +22,7 @@ When i open `virt-manager` then connect into `QEMU/KVM` and show the following e
     Virtual Machine Manager Connection Failure Unable to connect to libvirt qemu:///system.
 ```
 
-## Resolution
+## Solution
 
 `sudo systemctl restart libvirtd.service`
-
 
