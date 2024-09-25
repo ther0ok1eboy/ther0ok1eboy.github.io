@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Jeecg boot利用总结
-categories: [Software]
+categories: [pen-test]
 Description: Jeecg boot利用总结
-keywords: IP Rfkill
+keywords: Pen-test JeecgBoot
 mermaid: false
 sequence: false
 flow: false
@@ -14,9 +14,9 @@ mindmap2: false
 
 Description: Jeecg Boot利用总结 By O神糕手.
 
-## 一、SQL注入
+## SQL Injection
 
-### 1）/sys/duplicate/check
+### /sys/duplicate/check
 
 poc：
 
@@ -25,10 +25,6 @@ poc：
 ```
 
 <img src="/images/pen-test/JeecgBoot/image-20240626163646353.png" alt="image-20240626163646353" style="zoom:67%;" />
-
-
-
-
 
 ### 2）/sys/ng-alain/getDictItemsByTable/
 
