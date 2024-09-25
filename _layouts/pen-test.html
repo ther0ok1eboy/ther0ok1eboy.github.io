@@ -13,16 +13,16 @@ layout: default
       <div class="collection-title">
         <h1 class="collection-header">{% if page.cate1 %}{{ page.cate1 }} - {% endif %}{% if page.cate2 %}{{ page.cate2 }} - {% endif %}{{ page.title }}</h1>
         <div class="collection-info">
-          {% if page.url != '/wiki/' %}
+          {% if page.url != '/pen-test/' %}
           <span class="meta-info">
             <span class="octicon octicon-file-directory"></span>
-            <a href="{{ site.url }}/wiki/" title="Wiki">Wiki</a>
+            <a href="{{ site.url }}/pen-test/" title="Pen-test">Wiki</a>
           </span>
           {% endif %}
           {% if page.cate1 %}
           <span class="meta-info">
             <span class="octicon octicon-file-directory"></span>
-            <a href="{{ site.url }}/wiki/#{{ page.cate1 | downcase | replace: ' ', '-'}}" title="{{ page.cate1 }}">{{ page.cate1 }}</a>
+            <a href="{{ site.url }}/pen-test/#{{ page.cate1 | downcase | replace: ' ', '-'}}" title="{{ page.cate1 }}">{{ page.cate1 }}</a>
           </span>
           {% endif %}
         </div>
