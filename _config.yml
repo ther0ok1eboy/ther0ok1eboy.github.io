@@ -129,15 +129,7 @@ plugins:
     - jekyll-sitemap
     - jekyll-feed
     - jemoji
-#     - jekyll-mentions
-collections:
-    wiki:
-        output: true
-        permalink: /wiki/:path/
-    fragments:
-        output: true
-        permalink: /fragment/:path/
-
+    
 # ---------------- #
 #      Comments    #
 # ---------------- #
