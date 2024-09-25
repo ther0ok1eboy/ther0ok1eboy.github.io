@@ -24,9 +24,9 @@ You may seen my this [article](https://ther0ok1eboy.github.io/2019/12/20/Build-y
 
 - You must have a VPS and domain(have bond your VPS's IP).
 
-- My VPS server information.
++ My VPS server information.
 
-![](/images/build-vps/b.png)
+    ![](/images/build-vps/b.png)
 
 ### Quick start
 
