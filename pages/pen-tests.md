@@ -13,6 +13,5 @@ permalink: /pen-tests/
 
 {% case site.components.pen-tests.view %}
 
-{% when 'list' %}
 
 
