@@ -42,7 +42,7 @@ components:
         enabled: false
         image_alt: 
     # 维基索引页使用哪种视图，支持 列表（list）/分类（cate）
-    wiki:
+    pen-tests:
         view: cate
     # 图片灯箱效果功能
     fancybox:
