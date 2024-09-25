@@ -1,5 +1,5 @@
 ---
-layout: wiki
+layout: pen-test
 title: Wiki
 description: 人越学越觉得自己无知
 keywords: 维基, Wiki
@@ -27,7 +27,7 @@ permalink: /wiki/
 {% endif %}
 {% endfor %}
 </ul>
-
+> test
 {% when 'cate' %}
 
 {% assign item_grouped = site.wiki | where_exp: 'item', 'item.title != "Wiki Template"' | group_by: 'cate1' | sort: 'name' %}
