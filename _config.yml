@@ -76,10 +76,6 @@ navs:
     label: Categories
 
   -
-    href: /wiki/
-    label: Pen-tests
-
-  -
     href: /links/
     label: Links
     mobile-hidden: true
