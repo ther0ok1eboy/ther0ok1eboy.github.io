@@ -1,9 +1,18 @@
 ---
 layout: post
-title: Wireless Configuration
-date:  2024-02-10
-tags: network
+title: Wireless network configuration
+categories: [Software]
+Description: How to configure the wireless network.
+keywords: KVM Clash Proxychains4
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
+
+Description: How to configure the wireless network.
 
 ## Check the driver status
 

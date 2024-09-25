@@ -6,7 +6,7 @@ keywords: pen-test 0day
 comments: false
 copyright: false
 menu: 维基
-permalink: /wikiwiki/
+permalink: /wiki/
 ---
 
 > Penetrate everything
