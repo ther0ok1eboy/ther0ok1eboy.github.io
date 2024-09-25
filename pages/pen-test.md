@@ -26,7 +26,7 @@ permalink: /pen-test/
 
 {% assign taglist = tagliststr | split: ',' | sort_natural %}
 
-<a href="{{ site.url }}/pen-test/" style="color:#888;display:inline-block;margin:0 8px;">全部</a>{% for tag in taglist %}<a href="{{ site.url }}/pen-test/?tag={{ tag }}" style="color:#888;display:inline-block;margin:0 8px;">{{ tag }}</a>{% endfor %}
+<a href="{{ site.url }}/pen-test/" style="color:#888;display:inline-block;margin:0 8px;">Total</a>{% for tag in taglist %}<a href="{{ site.url }}/pen-test/?tag={{ tag }}" style="color:#888;display:inline-block;margin:0 8px;">{{ tag }}</a>{% endfor %}
 
 <ul class="listing">
 {% for item in site.pen-test %}
