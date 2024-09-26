@@ -18,7 +18,7 @@ TODO
 {% endfor %}
 <li>
 WeChat:<br />
-<img style="height:192px;width:192px;border:1px solid lightgrey;" src="{{ site.url }}/assets/images/qrcode.jpg" alt="闷骚的程序员" />
+<img style="height:192px;width:192px;border:1px solid lightgrey;" src="/assets/images/qrcode.jpg" alt="闷骚的程序员" />
 </li>
 </ul>
 
