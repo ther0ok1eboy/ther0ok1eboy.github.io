@@ -81,6 +81,11 @@ navs:
     mobile-hidden: true
 
   -
+    href: /donate/
+    label: Donate
+    mobile-hidden: true
+
+  -
     href: /about/
     label: About
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to change keyboard binding
-categories: [VPS]
+categories: [Software]
 Description: How to change keyboard binding
 keywords: Xmodmap
 mermaid: false
