@@ -1,20 +1,29 @@
 ---
 layout: post
-title: Give your github a personal domain
-date:  2020-02-17
-tags: Github
+title: Give your Github a personal domain
+categories: [Github]
+Description: How to give your Github a personal domain
+keywords: Github Domain
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
 ---
 
-### Introduction    
+Description: How to give your Github a personal domain
+
+## Introduction
 
 If you put your personal website into github page, you may suffer some problems. Such as the speeds of accessing website, modify difficulty and the original github domain is so long. I think make you most painful is the access speeds(Due to the github servers are setted in abroad, the speeds have been limited). OK, let's increase its speeds together.
 
-### Prerequisite
+## Requirement
 
 - This tutorial is base on you have got a github website like that [http://jasonsorria.github.io](http://blog.coolshark.xyz/) and a international domain.
-- In this test, i will use my github website to teach you how to add a new domain.    
+- In this test, i will use my github website to teach you how to add a new domain.
 
-### Quick start
+## Quick start
 
 - Clone your repositories to local: `git clone https://github.com/JasonSorria/JasonSorria.github.io && cd JasonSorria.github.io/`  
 
@@ -24,7 +33,7 @@ If you put your personal website into github page, you may suffer some problems.
 
 - Add record for your domain like that:(I recommend [cloudflare](https://dash.cloudflare.com/) because it offers CDN and DNSSEC service)
 
-    ![](../problem_logs/GCP+V2ray+WebSocks+tls-to-surfing/2.png)
+    ![](/images/build-vps/2.PNG) 
 
 - Why your github website will access faster and more beautiful? Because the github servers are setted in abroad, the CDN will get more effect than use the way of forwarding access your website from domestic. If you do not know how to obtain CDN for your domain, you can see [this article](http://blog.coolshark.xyz/2019/12/scure-surfing/).
 
