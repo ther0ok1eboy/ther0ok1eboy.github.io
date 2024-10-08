@@ -22,7 +22,7 @@ If you are a college student who bears the boring lessons seating in the boring 
 
 This is my system information:(Arch linux)
 
-![](/images/vnc-on-server/swappy-20240820-080441.png)
+![](/images/vnc-on-server/swappy-20241007-185105.png)
 
 ### Service on your Linux desktop
 

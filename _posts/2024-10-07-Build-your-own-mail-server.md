@@ -203,7 +203,7 @@ you should open ports: 25, 110, 143. (if you have used SSL, you also should open
 
     smtp server is mail.xxoo.com
 
-![login](/images/built-mailserer/2.png)
+    ![login](/images/built-mailserer/2.png)
 
 + if you want to use it to receive mail, the receiver is admin@xxoo.com
 
