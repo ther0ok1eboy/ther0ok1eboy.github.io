@@ -16,7 +16,7 @@ Description: How to use Git silky.
 
 ## Quickstart
 
-+ 看Git的使用方法.
++ 查看Git的使用方法.
 
     `$ git --help`
 
@@ -117,7 +117,7 @@ If we `$ git clone` to download by https instead of git@git(ssh) or `$ git push/
 
     [My new post](https://ther0ok1eboy.github.io/2024/09/24/Associate-remote-repository/)
 
-### push error
+### Push error
 
 + Description.
 
