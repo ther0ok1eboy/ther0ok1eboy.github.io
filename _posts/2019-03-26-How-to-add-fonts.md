@@ -37,7 +37,6 @@ Description: how to add some fonts on your system.
     # Or copy all directory, like this
     $ cp Nerd-Font/ /usr/share/fonts/
     ```
-    ``
 
 + Load the fonts and fresh font cache.
 
