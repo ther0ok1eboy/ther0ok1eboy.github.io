@@ -2,7 +2,7 @@
 
 ## 效果预览
 
-**[在线预览 &rarr;](https://ther0ok1eboy.github.io/)**
+[在线预览 &rarr;](https://ther0ok1eboy.github.io/)
 
 ## Fork 指南
 
