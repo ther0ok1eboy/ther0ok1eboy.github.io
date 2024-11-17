@@ -20,8 +20,8 @@ Using [Proxifier](https://www.proxifier.com/) to forward wechat applet traffic t
 
 ## Solution
 
-![](../images/wechat-applet/2cf8e09f9ed3cfe8c21465791e3439b6.png)
+![](/images/wechat-applet/2cf8e09f9ed3cfe8c21465791e3439b6.png)
 
-![](../images/wechat-applet/b1cfacf0c2072969aeffd3e7c1e1015a.png)
+![](/images/wechat-applet/b1cfacf0c2072969aeffd3e7c1e1015a.png)
 
 
