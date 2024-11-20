@@ -1,6 +1,22 @@
-### zip and unzip
+---
+layout: post
+title: Usage of compression tools
+categories: [command]
+Description: This article will introduce the usage of common compression tools
+keywords: Zip rar tar 7z
+mermaid: false
+sequence: false
+flow: false
+mathjax: false
+mindmap: false
+mindmap2: false
+---
 
-**Some common parameters:**
+Description: This article will introduce the usage of common compression tools.
+
+## Zip and unzip
+
+### Some common parameters
 
 | options             | explanation                                                                                          |
 |---------------------|------------------------------------------------------------------------------------------------------|
@@ -14,7 +30,7 @@
 | -S                  | compress directory including conceal files.                                                          |
 | -O                  | specify a character encoding for DOS, Windows and OS/2 archives                                      |
 
-**common use:** 
+### Common usage
 
 `$ zip -r -q zip-name $HOME/[your directory]` 
 
@@ -26,9 +42,9 @@
 
 `$ unzip zip-packages -O GBK zip-name` specify the GBK encoding to extract, the default encoding is utf-8.
 
-### unrar and rar
+## Unrar and rar
 
-**Some common parameters:**
+### Some common parameters
 
 | options | explanation                      |
 |---------|----------------------------------|
@@ -36,15 +52,15 @@
 | -p      | print extract infomation         |
 | -x      | extract files with complete path |
 
-**common use:** 
+### Common use
 
 `$ rar a c.rar *.c` compress all of C file under the current directory into a package named c.rar.
 
 `$ unrar x c.rar` extract with full paths. 
 
-### tar
+## Tar
 
-**Some common parameters:**
+### Some common parameters
 
 | options | explanation                                       |
 |---------|---------------------------------------------------|
@@ -55,7 +71,7 @@
 | -f      | use Archive name and it the last parameter        |
 | -r      | compress file into a tail of exiting Archive file |
 
-**common use:** 
+### Common use
 
 `$ tar -cf c.tar *.c` compress all of C file under the current directory into a Archive named c.tar.
 
@@ -63,7 +79,7 @@
 
 `$ tar -czf c.tar.gz *.py` after compress an Archive file named c.tar, use `gzip` to compress this file named c.tar.gz. 
 
-**some conclusions:**
+### Some conclusions
 
 | command          | easy usage        |
 |------------------|-------------------|
@@ -74,8 +90,8 @@
 | *.tar.bz2        | tar -xjf          |
 | *.rar            | unrar x           |
 
-### 7za
+## 7za
 
-comman use:**
+### Comman use
 
 `$ 7za x *.7z` extract files with full path.

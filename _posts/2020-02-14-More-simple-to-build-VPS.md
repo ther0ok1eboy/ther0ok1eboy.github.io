@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: More simple to build your own VPS
+Description: More simple to build your own VPS.
 
 ### Introduction
 

@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: How to build your own VPS
+Description: How to build your own VPS.
 
 ## Description
 

@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: How to install VNC service on server and client
+Description: How to install VNC service on server and client.
 
 ## Introduction
 

@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: How to give your Github a personal domain
+Description: How to give your Github a personal domain.
 
 ## Introduction
 

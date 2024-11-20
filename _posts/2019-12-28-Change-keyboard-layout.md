@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: How to change keyboard binding
+Description: How to change keyboard binding.
 
 ## Introduction
 
