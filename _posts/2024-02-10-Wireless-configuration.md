@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wireless network configuration
-categories: [Software]
+categories: [Network]
 Description: How to configure the wireless network.
 keywords: IP Rfkill
 mermaid: false
