@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 地图大师API payload总结
+title: Map API Exploit Summary Of Returnwrong
 categories: [Pen-test]
 Description: 地图大师API payload总结
 keywords: API key
@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: 地图大师API payload总结 By 地图大师returnwrong.
+Description: Map API exploit summary By returnwrong.
 
 ## Quickstart
 

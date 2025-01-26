@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Order by 注入总结
+title: Order by Injection Exploit Summary
 categories: [Pen-test]
 Description: Order by 注入总结
 keywords: SQL
@@ -14,7 +14,7 @@ mindmap2: false
 
 
 
-Description: Order by注入总结。
+Description: Order by injection exploit summary.
 
 ## 判断order by注入
 

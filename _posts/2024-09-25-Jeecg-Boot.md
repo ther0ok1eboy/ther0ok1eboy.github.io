@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Jeecg Boot利用总结
+title: Jeecg Boot Exploit Summary
 categories: [Pen-test]
-Description: Jeecg Boot利用总结
+Description: Jeecg Boot exploit summary
 keywords: JeecgBoot
 mermaid: false
 sequence: false
@@ -12,7 +12,7 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: Jeecg Boot利用总结. By O神糕手
+Description: Jeecg Boot exploit summary. By O神糕手
 
 ## SQL Injection
 
