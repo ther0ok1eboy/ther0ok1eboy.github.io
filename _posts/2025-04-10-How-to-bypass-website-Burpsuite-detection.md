@@ -25,13 +25,10 @@ Using proxy tools such as Burpsuite for traffic interception and analysis is a v
 - Bypass Method:
   - Modify the `User-Agent` in Burp Suite to make it look like a real browser.
   - Go to **Proxy -> Options** in Burp Suite and find the **Match and Replace** function.
-  - Add a rule to replace the default Burp User-Agent with a common browser User-Agent, for example:
-         ```shell
-         User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-         ``
+  - Add a rule to replace the default Burp User-Agent with a common browser User-Agent.
 ![pic](/images/bypass-bp-check/swappy-20250410-092404.png) 
 
-### 2. HTTPS Traffic Characterization
+### HTTPS Traffic Characterization
 
 - Principle of detection: Some websites inspect the certificate chain of HTTPS traffic to determine if it is signed by Burp Suite's self-signed certificates.
 
