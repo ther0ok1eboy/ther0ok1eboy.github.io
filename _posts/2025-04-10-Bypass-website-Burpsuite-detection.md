@@ -78,6 +78,7 @@ Using proxy tools like **Burpsuite** to intercept and analyze traffic is common 
 - **🛠️ Bypass**:
   - Adjust TLS settings in **Project Options → SSL/TLS**.
   - Use **mitmproxy** for advanced, fine-tuned TLS emulation.
+  - Install Burpsuite plugin **[Awesome TLS](https://github.com/sleeyax/burp-awesome-tls)**.
 
 ---
 
