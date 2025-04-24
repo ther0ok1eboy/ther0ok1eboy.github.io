@@ -16,92 +16,92 @@ Description: How to use Git silky.
 
 ## Quickstart
 
-+ 查看Git的使用方法.
++ View how to use Git.
 
     `$ git --help`
 
-+ 当前文件夹变为一个git仓库,创建git仓库.
++ Initialize the current folder as a Git repository.
 
     `$ git init`
 
-+ 看当前仓库文件变化情况.
++ View the status of the files in the current repository.
 
     `$ git status`
 
-+ 增加修改.
++ Add changes.
 
-    `$ git add # 可使用git add . 来添加当前仓库所有修改`
+    `$ git add # You can use git add . to add all changes in the current repo`
 
-+ 次还没有提交的更改.
++ View uncommitted changes.
 
-    `$ git diff # 比较工作区与暂存区的区别`
+    `$ git diff # Compare working directory with staging area`
 
-+ 回滚，撤销提交操作.
++ Rollback or undo commit actions.
 
     `$ git reset`
 
-+ Git提交自己身份(name).
++ Set Git identity (name).
 
     `$ git config --global user.name "USER_NAME"`
 
-+ Git提交自己身份(email).
++ Set Git identity (email).
 
     `$ git config --global user.email "USER_EMAIL"`
 
-+ Git提交内容.
++ Commit changes.
 
-    `$ git commit -m "COMMIT" # COMMIT为对提交的内容进行描述`
+    `$ git commit -m "COMMIT" # COMMIT is the message describing the commit`
 
-+ 让Git不提交某些文件/忽略某些文件.
-    
-    创建文件`.gitignore`并在文件中添加文件名/文件夹名即可.
++ Tell Git to ignore some files/folders.
 
-+ 让Git不再追踪某个/某些文件.
+    Create a file named `.gitignore` and add filenames/folder names to it.
+
++ Stop tracking a specific file.
 
     `$ git rm --cached FILE_NAME`
 
-+ Git添加分支.
++ Create a new Git branch.
 
     `$ git branch BRANCH_NAME`
 
-+ Git切换分支.
++ Switch Git branches.
 
     `$ git checkout BRANCH_NAME`
 
-+ 合并分支.
++ Merge branches.
 
     `$ git merge BRANCH_NAME`
 
-+ 列出本地分支.
++ List local branches.
 
     `$ git branch`
 
-+ 删除分支.
++ Delete a branch.
 
-    `$ git branch -d BRANCH_NAME # -D BRANCH_NAME 强制删除`
+    `$ git branch -d BRANCH_NAME # -D BRANCH_NAME force deletes`
 
-+ 添加远程仓库.
++ Add a remote repository.
 
-    `$ git remote add origin REMOTE_URL # REMOTE_URL 为远程地址`
+    `$ git remote add origin REMOTE_URL # REMOTE_URL is the remote address`
 
-+ 设置本地分支追踪远程分支.
++ Set local branch to track a remote branch.
 
     `$ git push --set-upstream`
 
-+ 克隆仓库.
++ Clone a repository.
 
     `$ git clone REMOTE_URL`
 
-+ 删除本地仓库.
++ Delete the local repository.
 
     `$ rm -rf GIT_DIR/.git`
 
 
-## Some problems when i use Git
+## Some problems when I use Git
 
 ### Repeat input password when your push git code
 
-If we `$ git clone` to download by https instead of git@git(ssh) or `$ git push/pull`, git always hint us to input account/password, which make us disgust
+If we `$ git clone` using https instead of git@git(ssh) or `$ git push/pull`, Git always prompts us to input username/password, which is annoying.
 
 + Solution
 
@@ -109,9 +109,9 @@ If we `$ git clone` to download by https instead of git@git(ssh) or `$ git push/
 
     `$ git config --global credential.helper store`
 
-    after execute above commands, it is auto product a txt file in which record your account and password.
+    After executing the above command, Git will automatically create a txt file storing your account and password.
 
-    `$ git push` input the last password.
+    `$ git push` one last time with your credentials.
 
 + Latest solution
 
@@ -121,17 +121,17 @@ If we `$ git clone` to download by https instead of git@git(ssh) or `$ git push/
 
 + Description.
 
-    Git refuses to update, because of not exist local commit included by remote repository.
+    Git refuses to update, because your local commit is not included in the remote repository.
 
 + Why?
 
-    The repository you want to push was been used(remote add origin master..) by other local repository and see 'Git push --help to find more information'.
+    The repository you want to push to was already used (remote add origin master..) by another local repository. See 'Git push --help' for more info.
 
 + Solution.
 
-    Force to push: `$ git push -u origin +master`.
+    Force push: `$ git push -u origin +master`.
 
-    Download your remote repository to modify then commit. `$ git clone [your remoterepositiry page]`.
+    Or clone the remote repository again: `$ git clone [your remote repository URL]`.
 
 ### Error: pathspec 'modify' did not match any file(s) known to git
 
