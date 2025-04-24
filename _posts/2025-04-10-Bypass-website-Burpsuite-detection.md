@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How to bypass website Burpsuite detection
+title: 🚫 How to Bypass Website Burpsuite Detection 🕵️‍♂️
 categories: [Pen-test]
-Description: How to bypass
-keywords: Burpsuite
+Description: Learn how to bypass Burpsuite detection like a pro.
+keywords: Burpsuite, Bypass, Pentest
 mermaid: false
 sequence: false
 flow: false
@@ -12,76 +12,74 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: In this guide, you will learn how to bypass website Burpsuite detection.
+> 🔐 **Description**: This guide walks you through techniques to bypass website Burpsuite detection mechanisms.
 
-## Quickstart
+---
 
-Using proxy tools such as Burpsuite for traffic interception and analysis is a very common operation in penetration testing or security research. However, some websites block such behavior by detecting the presence of proxy tools, usually to prevent malicious activity or protect sensitive data. Bypassing such detection requires careful analysis of the site's detection mechanism and appropriate countermeasures.
+## 🚀 Quickstart
 
-### User-Agent detection
+Using proxy tools like **Burpsuite** to intercept and analyze traffic is common in penetration testing. However, websites often try to detect and block such tools. Let's see how to bypass these protections effectively.
 
-- Principle of Detection: Some websites check the `User-Agent` field in the request header to determine if it is coming from a browser or other tool (such as Burpsuite).
+---
 
-- Bypass Method:
-  - Modify the `User-Agent` in Burp Suite to make it look like a real browser.
-  - Go to **Proxy -> Options** in Burp Suite and find the **Match and Replace** function.
-  - Add a rule to replace the default Burp User-Agent with a common browser User-Agent.
-![pic](/images/bypass-bp-check/swappy-20250410-092404.png) 
+### 🧭 User-Agent Detection
 
-### HTTPS Traffic Characterization
+- **🔍 Detection**: Inspects the `User-Agent` header to check for non-browser requests.  
+- **🛠️ Bypass**:
+  - Modify the `User-Agent` in **Burp Suite** to mimic a real browser.
+  - Navigate to **Proxy → Options → Match and Replace**.
+  - Add a rule to replace Burp’s default User-Agent with one from a modern browser.
+  - ![pic](/images/bypass-bp-check/swappy-20250410-092404.png)
 
-- Principle of detection: Some websites inspect the certificate chain of HTTPS traffic to determine if it is signed by Burp Suite's self-signed certificates.
+---
 
-- Bypass Methods:
-  - Install Burp CA certificate:
-       - Import Burp Suite's CA certificate into the target device's trusted certificate store (e.g., browser or operating system).
-       - For mobile devices, the certificate can be downloaded and installed via Burp Suite's `http://burp` page.
-  - Dynamically Generated Certificates:
-       - Ensure that `Generate CA-signed per-host certificates` is enabled in Burp Suite's **Proxy -> Options** to avoid the use of unified CA certificates.
-  - Certificate Forgery:
-       - If the target site has strict checks on the certificate chain, you can try to forge the certificate chain of the target site, but this requires a higher technical threshold.
+### 🔐 HTTPS Traffic Characterization
 
-### IP Address or Port Detection
+- **🔍 Detection**: Analyzes the certificate chain for Burp's self-signed certs.  
+- **🛠️ Bypass**:
+  - Install Burp's **CA certificate** on the browser/system.
+  - Enable **"Generate CA-signed per-host certificates"** under **Proxy → Options**.
+  - In advanced cases, forge the cert chain (⚠️ requires advanced skills).
 
-- Principle of detection: Some websites check if the client's connection is coming from a specific proxy port (e.g. 8080, 8081) or block known proxy IPs through blacklisting mechanism.
+---
 
-- Bypass Methods:
-  - Modify the listening port of Burp Suite:
-    - In **Proxy -> Options** of Burp Suite, change the default listening port (e.g. from 8080 to 9090).
-  - Use another proxy tool:
-    - Switch to other proxies (such as mitmproxy or Charles Proxy), which may not be recognized by the target website.
-  - Use a local SOCKS proxy:
-    - Forward traffic through a locally running SOCKS proxy (such as an SSH tunnel) to avoid directly exposing the Burp Suite's ports.
+### 🌐 IP Address or Port Detection
 
-### JavaScript Detection
+- **🔍 Detection**: Looks for traffic from typical proxy ports (e.g. 8080) or known proxy IPs.  
+- **🛠️ Bypass**:
+  - Change **Burp's listening port** (e.g. to 9090).
+  - Try other proxy tools (e.g. **mitmproxy**, **Charles Proxy**).
+  - Use **SOCKS proxy** or **SSH tunnel** to mask Burp.
 
-- Principle of Detection: Some websites check for the presence of proxy tool features, such as Burp Suite's default request headers or unusual DOM behavior, via JavaScript on the front-end.
+---
 
-- Bypass Methods:
-  - **Disable JavaScript detection scripts**:
-    - Use a browser plugin (such as Tampermonkey) to write scripts that remove or modify the detection code.
-  - **Simulates normal browser behavior**:
-    - Enable browser extensions (e.g. FoxyProxy for Chrome) in Burp Suite to ensure traffic behavior is closer to real users.
-  - **Analyze and replay legitimate requests**:
-    - Use Burp Suite's **Repeater** or **Intruder** tools to manually replay legitimate requests to avoid triggering JavaScript detection.
+### 📜 JavaScript Detection
 
-### Time Delay Detection
+- **🔍 Detection**: JS-based scripts detect anomalies or tool signatures in headers or DOM.  
+- **🛠️ Bypass**:
+  - Use **Tampermonkey** to neutralize detection scripts.
+  - Emulate real user behavior with **browser plugins like FoxyProxy**.
+  - Replay valid requests using **Burp Repeater** or **Intruder**.
 
-- Principle of detection: Certain websites measure the response time of a request, and if an abnormal delay is found (e.g., time difference due to proxy processing), it may be determined that a proxy tool is being used.
+---
 
-- Bypass Methods:
-  - **Optimize network environment**:
-    - Ensure that the network latency between Burp Suite and the target server is as low as possible.
-  - **Adjust Burp Suite settings**:
-    - In **Proxy -> Options**, reduce the request processing time overhead.
+### ⏱️ Time Delay Detection
 
-### TLS Feature Detection
+- **🔍 Detection**: Monitors delays caused by proxies during request handling.  
+- **🛠️ Bypass**:
+  - Optimize network conditions to reduce latency.
+  - Tune Burp’s performance via **Proxy → Options**.
 
-- Principle of detection: Some websites with high security will analyze the features (e.g., encryption suite, protocol version) during the TLS handshake to determine if they are consistent with standard browsers.
+---
 
-- Bypass Methods:
-  - **Configure Burp Suite's TLS settings**:
-    - In Burp Suite's **Project Options -> SSL/TLS**, select the cipher suite and protocol version that is compatible with the target website.
-  - **Use advanced features of man-in-the-middle tools**:
-    - If the target site has strict requirements for TLS features, try using more advanced man-in-the-middle tools (such as mitmproxy) that support more flexible TLS configurations.
+### 🧬 TLS Feature Detection
+
+- **🔍 Detection**: Analyzes TLS handshake metadata like cipher suites and protocol version.  
+- **🛠️ Bypass**:
+  - Adjust TLS settings in **Project Options → SSL/TLS**.
+  - Use **mitmproxy** for advanced, fine-tuned TLS emulation.
+
+---
+
+💡 **Tip**: Always test in a safe, legal, and controlled environment. These techniques are for ethical hacking and red team use only.
 
