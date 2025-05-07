@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A few notes on intercepting wechat applet packets
+title: A few Notes on Intercepting WeChat Applet Packets
 categories: [Pen-test]
 Description: A few notes on intercepting wechat applet packets
 keywords: Wechat Applet Burpsuite
@@ -12,11 +12,11 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: A few notes on intercepting wechat applet packets.
+Description: A few notes on intercepting WeChat applet packets.
 
 ## Problem
 
-Using [Proxifier](https://www.proxifier.com/) to forward wechat applet traffic to Burpsuite, it still can't intercept packets.
+Using [Proxifier](https://www.proxifier.com/) to forward WeChat applet traffic to **BurpSuite**, it still can't intercept packets.
 
 ## Solution
 
