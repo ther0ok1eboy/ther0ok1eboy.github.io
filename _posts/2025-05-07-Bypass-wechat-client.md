@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bypass WeChat Client Open
-categories: [Pentest]
+title: 🚨 Bypass WeChat Client Open 🕵️‍♂️
+categories: [Pen-test]
 Description: How to bypass Please open the link on the WeChat client
 keywords: WeChat Applet
 mermaid: false
