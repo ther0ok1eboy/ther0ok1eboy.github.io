@@ -20,7 +20,7 @@ When you want to copy the WeChat Official Account link to open it with your brow
 
 ![alt text](/images/bypass-wx-client-open/swappy-20250507-1.png) 
 
-## Quickstart
+## ⚡ Quickstart
 
 - First open the  WeChat Official Account. Use a packet grabber like **yakit**, and get a working **User-Agent**.
 
@@ -34,7 +34,7 @@ Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
 
 - Then select the new device you just added in the **Responsive** dropdown menu.
 
-### If you don't need WeChat authentication, you're done here, but generally you need WeChat authentication, and you'll run into the following situation.
+### 🔐 If you don't need WeChat authentication, you're done here, but generally you need WeChat authentication, and you'll run into the following situation.
 
 ![alt text](/images/bypass-wx-client-open/swappy-20250507-3.png) 
 
