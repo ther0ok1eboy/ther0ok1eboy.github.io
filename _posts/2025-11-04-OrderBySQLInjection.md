@@ -35,8 +35,15 @@ select * from table where id =1 order by zzf desc;
 如何判断这里有order by注入呢？很简单，原理跟最基础的联合注入利用order by爆破字段数量是一样的。
 order by (1)  不报错
 order by (10000000) 报错
+
+如下图：
+![](/images/orderbysql/swappy-20251104-094733.png) 
+`
+`,2`: 正常说明存在两列数据,一般这个时候页面会返回200
+`,3`: 则会报错因为没有三列数据，一般这个时候页面会返回404
+也就是说直接在排序字段后面或者desc、asc后面添加逗号和数字即可判断是否存在注入
+
     
-这样就基本能判断出来这里有order by注入了。
 当然也可以直接order by sleep(1)。
     
 ## order by注入利用
